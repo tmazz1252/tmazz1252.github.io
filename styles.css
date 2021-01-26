@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*
+    Timothy C Masserant
+	Project V1
+	1/22/21
+	Filename: styles.css
+*/
+html, body
+{
+    padding: 0%;
+    margin: 0%;
+}
+html
+{
+    height: 100%;
+    background-color: rgb(41, 38, 38);
+}
+body > *
+{
+    min-height: 100%;
+    color: azure;
+    background-color: rgb(102, 98, 98);
+}
+/* the * symbol is the wildcard selector that matches the element to every child of the body element */
+header
+{
+    background-color: rgb(41, 38, 38);
+    
+}
+
+a
+{
+    font-size: large;
+}
+header > p
+{
+    font-size: small;
+}
+div
+{
+    font-size: small;
+}
+div > p::first-letter
+{
+    color: purple;
+}
+/* pseudo-element that changes the color of the first letter of each sentence */
+footer
+{
+    background: rgba(255, 0, 0, 0.616);
+    position: relative;
+    bottom: 0%;
+    /*Places footer at bottom of screen where I want it*/
+}
+article > p
+{
+    text-align: left;
+}
+p
+{
+    text-align: center;
+}
+nav > ul > li > a:hover, nav > ul > a:active
+{
+    color: royalblue;
+}
+/* pseudo-class that changes the color of the nav links when cursor hovers over */
+article h1+h2
+{
+    color: red;
+}

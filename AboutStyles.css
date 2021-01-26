@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+    Timothy C Masserant
+	Project V1
+	1/22/21
+	Filename: AboutStylesstyles.css
+*/
+body{
+    background-color: rgb(41, 38, 38);
+}
+body > header{
+    color: white;
+}
+a:link{
+    text-decoration: none;
+
+}
