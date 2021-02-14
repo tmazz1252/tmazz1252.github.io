@@ -1,8 +1,8 @@
 @charset "utf-8";
 /*
     Timothy C Masserant
-	Project V1
-	1/22/21
+	Project V2
+	2/13/21
 	Filename: styles.css
 */
 html, body
@@ -15,7 +15,7 @@ html
     height: 100%;
     background-color: rgb(41, 38, 38);
 }
-body > *
+body 
 {
     min-height: 100%;
     color: azure;

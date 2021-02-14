@@ -1,8 +1,8 @@
 @charset "utf-8";
 /*
     Timothy C Masserant
-	Project V1
-	1/22/21
+	Project V2
+	2/13/21
 	Filename: AboutStylesstyles.css
 */
 body{
@@ -12,7 +12,7 @@ body{
     margin: 0;  
     padding: 0;  
     vertical-align: baseline; 
-
+    /*CSS reset elements*/
 
 }
 body > header{
