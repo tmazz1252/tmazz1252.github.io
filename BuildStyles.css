@@ -1,0 +1,87 @@
+@charset "utf-8";
+/*
+    Timothy C Masserant
+	Project V2
+	2/13/21
+	Filename: styles.css
+*/
+body
+{
+    border-left: 1px solid grey;
+    border-right:1px solid grey;
+    box-shadow:rgb(175, 167, 167) 15px 0px 25px,
+               rgb(175, 167, 167) -15px 0px 25px;
+    background-image: url(background.jpg);
+    background-size: 44%;
+    background-position-x: 50%;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    background-color: rgb(41, 38, 38);
+    -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s ease;
+    -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s ease;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s ease; 
+    /*When the page is open on all browsers supported by webkit and moz a four second white flash occurs*/
+    /*background image set as a no repeat image placed behind the figure image*/
+    /*box-shadow creates a shadow effect on the edges of the body border*/
+}
+
+body > li > a
+{
+    position: absolute;
+    left: 20px;
+    /*Places photo element twenty pixels away from the left side of the screen*/
+}
+body > li > i
+{
+    position: fixed;
+    top: 15px;
+    left: 90%;
+    /*Fixes a fly to the top right side of the screen so that it moves with where you scroll*/
+}
+body > li 
+{
+    overflow: auto;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    /*Shifts all li elements 300 pixels away from eachother and displays the scrollbar for the
+    elements that cause an overflow of content*/
+}
+figure
+{
+    margin: 50px auto 8px;
+    width: 35%;
+    border: 8px double steelblue;
+    border-radius: 20px 20px 20px 20px;
+    /*border elements creates a double blue border with a curvature radius at the ends of the border*/
+}
+figure img
+{
+    display: block;
+    width: 100%;
+    opacity: 0.5;
+    transform: skew(8deg,3deg)
+    /*sets the opacity of the figure image so that its mostly transparent but the person is mostly visible*/
+    /*transform changes image appearance, skew warps the image based on the amount of degrees given and which X,Y angles provided*/
+}
+figure figcaption
+{
+    background-color: rgb(82, 76, 76);
+    text-align: center;
+    background-color: silver;
+    /*figure box content that sets the figure image to the center of the screen and sets the
+    caption to the center with a silver colored background*/
+}
+body > nav > ul > li
+{
+    float: left;
+    width: 25%;
+    /*CSS float example that sets my links horizontally across*/
+}
+footer
+{
+    background: radial-gradient(white, grey);
+    text-align: center;
+    /*radial-gradient creates a color gradient moving from the center of the footer outwards*/
+}
+

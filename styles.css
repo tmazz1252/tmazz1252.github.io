@@ -60,6 +60,18 @@ p
 {
     text-align: center;
 }
+body > nav > ul > li
+{
+    float: left;
+    width: 25%;
+    /*CSS float example that sets my links horizontally across*/
+}
+nav > ul > li > a
+{
+    clear: none;
+    width: 25%;
+    /*Sets the bottom page link with the float element of the navigation list*/
+}
 nav > ul > li > a:hover, nav > ul > a:active
 {
     color: royalblue;
@@ -68,4 +80,13 @@ nav > ul > li > a:hover, nav > ul > a:active
 article h1+h2
 {
     color: red;
+}
+div > p
+{
+    display: grid;
+    grid-template-rows: 10px auto 10px;
+    grid-template-columns: 65% 50% 50%;
+    outline: 1px solid rgba(253, 0, 0, 0.212);
+    /*Sets the down the page element into a grid seperating each line in the row by 10 pixels
+    and the first percentage value in the colums element moving the text to the center of the grid*/
 }

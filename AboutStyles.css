@@ -7,6 +7,13 @@
 */
 body{
     background-color: rgb(41, 38, 38);
+   
+    font-size: 100%;  
+    margin: 0;  
+    padding: 0;  
+    vertical-align: baseline; 
+
+
 }
 body > header{
     color: white;
