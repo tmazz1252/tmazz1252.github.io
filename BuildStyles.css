@@ -1,10 +1,16 @@
 @charset "utf-8";
 /*
     Timothy C Masserant
-	Project V2
-	2/13/21
+	Project V3
+	2/20/21
 	How-To-Build stylesheet
 */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
 body
 {
     border-left: 1px solid grey;
@@ -77,6 +83,27 @@ body > nav > ul > li
     float: left;
     width: 25%;
     /*CSS float example that sets my links horizontally across*/
+}
+table.Hardware
+{
+    background: white;
+    border: 10px outset rgb(153, 0, 153);
+    border-collapse: collapse;
+    font-size: 0.75em;
+    width: 100%;
+    /* sets the border color of the table to white, creates a border and collapses the borderlines into eachother */
+}
+table.Hardware th, table.Hardware td
+{
+    border: 1px solid gray;
+    text-align: center;
+    /*creates a gray border lines between all used data cells*/
+}
+table.Hardware caption
+{
+    caption-side: bottom;
+    text-align: right;
+    /* Aligns the table caption to the bottom right of the table*/
 }
 footer
 {
